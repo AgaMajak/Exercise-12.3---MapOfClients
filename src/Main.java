@@ -12,7 +12,7 @@ public class Main {
         System.out.println(mapOfCustomers.keySet());
         System.out.println(mapOfCustomers.values());
 
-        Customer.printInfoWithIDFromUser(mapOfCustomers);
+        CustomerInformation.printInfoWithIDFromUser(mapOfCustomers);
 
     }
 }

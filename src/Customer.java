@@ -1,6 +1,3 @@
-import java.util.Map;
-import java.util.Scanner;
-
 public class Customer {
     private int id;
     private String firstName;
@@ -12,19 +9,6 @@ public class Customer {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
-    }
-
-    public static void printInfoWithIDFromUser(Map<Integer, Customer> map) {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Podaj ID klienta, aby wyświetlić informacje o nim.");
-        int id = scan.nextInt();
-        scan.close();
-
-        if (map.get(id) == null) {
-            System.out.println("Nie ma klienta o takim ID.");
-            return;
-        }
-        System.out.println(map.get(id));
     }
 
     @Override
